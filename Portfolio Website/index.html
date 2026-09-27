@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arkadeep Mondal — Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <div class="brand">Arkadeep Mondal</div>
+    <nav class="links">
+      <a href="#projects">Projects</a>
+      <a href="#demo">Demo</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle color theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="intro-line">B.Tech CS (AI) student in Pune, India</p>
+      <h1>I build software end to end, from the interface someone clicks to the API that answers.</h1>
+      <p class="lede">Third-semester computer science student focused on full-stack web development — React on the front end, Express and Node on the back, with a growing habit of solving DSA problems for fun.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=arkadeepm08@gmail.com" target="_blank">Email me</a>
+        <a class="btn ghost" href="#projects">View projects</a>
+      </div>
+    </div>
+    <div class="stack" aria-hidden="true">
+      <div class="layer"><div class="top-row"><span class="name">React</span><span class="tag">frontend</span></div><div class="bar"></div></div>
+      <div class="layer"><div class="top-row"><span class="name">Express.js</span><span class="tag">backend</span></div><div class="bar"></div></div>
+      <div class="layer"><div class="top-row"><span class="name">MongoDB / MySQL</span><span class="tag">data</span></div><div class="bar"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <div class="meta"><span>Authentication system</span><span>Jun 2026 – Present</span></div>
+        <h3>React + Express full-stack web app</h3>
+        <p class="role">A frontend-backend application where a React client talks to an Express.js server</p>
+        <ul>
+          <li>Login flow that checks whether a user ID exists, creates a new one, and handles related account actions</li>
+          <li>REST APIs with JSON request/response handling and CORS configured between client and server</li>
+          <li>A POST /users flow that sends data from the frontend to the backend and renders the server's response</li>
+        </ul>
+        <div class="stack-tags"><span>React</span><span>Express.js</span><span>REST</span><span>CORS</span></div>
+      </div>
+      <div class="card">
+        <div class="meta"><span>Personal site</span><span>Nov – Dec 2025</span></div>
+        <h3>Personal portfolio website</h3>
+        <p class="role">A responsive site built from scratch to showcase skills, projects and education</p>
+        <ul>
+          <li>Structure, styling and interactive elements built with plain HTML, CSS and JavaScript</li>
+          <li>Project and personal information organized into a clean, easy-to-navigate layout</li>
+          <li>Responsive across screen sizes, with no framework dependencies</li>
+        </ul>
+        <div class="stack-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="wrap">
+    <h2>Try it</h2>
+    <p class="section-intro">A small working version of the login flow from the authentication project above — it checks a typed ID against an in-memory list and sends back a real HTTP-style response.</p>
+    <div class="demo-panel">
+      <div class="demo-form">
+        <label for="uid">User ID</label>
+        <input id="uid" type="text" placeholder="e.g. arkadeep08" maxlength="24" autocomplete="off">
+        <div class="demo-actions">
+          <button id="checkBtn" class="btn ghost" type="button">Check if ID exists</button>
+          <button id="createBtn" class="btn primary" type="button">Create ID</button>
+        </div>
+      </div>
+      <div class="demo-console">
+        <div class="console-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="path">users.api</span></div>
+        <pre id="consoleOut">// response will appear here</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group"><h4>Languages</h4><div class="chips"><span>Java</span><span>JavaScript</span><span>Python</span></div></div>
+      <div class="skill-group"><h4>Frontend</h4><div class="chips"><span>HTML5</span><span>CSS3</span><span>React.js</span></div></div>
+      <div class="skill-group"><h4>Backend</h4><div class="chips"><span>Node.js</span><span>Express.js</span><span>REST APIs</span></div></div>
+      <div class="skill-group"><h4>Databases</h4><div class="chips"><span>MySQL</span><span>MongoDB</span></div></div>
+      <div class="skill-group"><h4>Data &amp; libraries</h4><div class="chips"><span>NumPy</span><span>Pandas</span></div></div>
+      <div class="skill-group"><h4>Tools &amp; concepts</h4><div class="chips"><span>Git</span><span>GitHub</span><span>DSA</span><span>JSON</span><span>CORS</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div class="edu-card">
+      <div>
+        <h3>B.Tech, Computer Science (AI)</h3>
+        <p>Ajeenkya D. Y. Patil University — Vedam School of Technology</p>
+      </div>
+      <time>Aug 2025 – Present</time>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <div class="item"><span class="label">Email</span><span class="row"><a href="mailto:arkadeepm08@gmail.com">arkadeepm08@gmail.com</a><button class="copy-btn" data-copy="arkadeepm08@gmail.com" type="button">Copy</button></span></div>
+      <div class="item"><span class="label">Phone</span><span class="row"><a href="tel:+918972727243">+91 89-7272-7243</a><button class="copy-btn" data-copy="+91 89-7272-7243" type="button">Copy</button></span></div>
+      <div class="item"><span class="label">LinkedIn</span><a href="https://linkedin.com/in/arkadeep-mondal-vst/" target="_blank" rel="noopener">linkedin.com/in/arkadeep-mondal-vst</a></div>
+      <div class="item"><span class="label">Location</span><span>Pune, Maharashtra</span></div>
+    </div>
+    <footer>Speaks English, Hindi and Bengali. Currently focused on full-stack web development, React, backend APIs and DSA.</footer>
+  </div>
+</section>
+
+<script src="script.js" defer></script>
+</body>
+</html>
